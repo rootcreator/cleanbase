@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ service.name }}</h2>
+<p>{{ service.description }}</p>
+<p>Price: {{ service.price }}</p>
+<a href="{% url 'booking_create' service.id %}" class="btn btn-success">Book Now</a>
+{% endblock %}
